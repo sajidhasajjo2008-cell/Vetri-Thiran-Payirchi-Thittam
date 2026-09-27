@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - Live Integration</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>EduGenie Learning Assistant</h1>
+
+        <p class="subtitle">
+            Ask questions and get instant learning assistance
+        </p>
+
+        <label for="task">Select Task</label>
+
+        <select id="task">
+            <option value="qa">Question & Answer</option>
+            <option value="explain">Explanation</option>
+            <option value="quiz">Quiz Generation</option>
+            <option value="summarize">Summary</option>
+            <option value="recommendations">
+                Learning Recommendations
+            </option>
+        </select>
+
+        <label for="question">Enter your question</label>
+
+        <textarea
+            id="question"
+            placeholder="Type your question here..."
+        ></textarea>
+
+        <button onclick="askQuestion()">
+            Ask EduGenie
+        </button>
+
+        <div id="result">
+            Result will appear here...
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
